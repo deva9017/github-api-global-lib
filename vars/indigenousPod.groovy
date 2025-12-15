@@ -12,7 +12,7 @@ def call(body) {
     pipeline {
         agent {
             kubernetes {
-                label 'indigenous-agent'
+                label 'any'
                 defaultContainer 'jnlp'
                 yaml """
                     apiVersion: v1
